@@ -1,0 +1,274 @@
+@prefix : <http://example.org/sogo#> .
+@base <http://example.org/sogo#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sogo: <http://example.org/sogo#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+
+<http://example.org/sogo#> rdf:type owl:Ontology ;
+                            rdfs:comment "Ontology for representing multiscale grid cells, properties, weights, and upscaling/downscaling methods."@en ;
+                            rdfs:label "A Scaling Ontology for Geospatial Observations"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2006/time#inXSDDateTimeStamp
+time:inXSDDateTimeStamp rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/time#year
+time:year rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/sogo#hasAuxiliaryProperty
+sogo:hasAuxiliaryProperty rdf:type owl:ObjectProperty ;
+                          rdfs:domain sogo:ScalingProcedure ;
+                          rdfs:range sogo:AuxiliaryProperty ;
+                          rdfs:comment "The property used as reference for scaling of the main property for the target geo Feature."@en ;
+                          rdfs:label "has Auxiliary Property"@en .
+
+
+###  http://example.org/sogo#hasScalingProperty
+sogo:hasScalingProperty rdf:type owl:ObjectProperty ;
+                        rdfs:domain sogo:ScalingProcedure ;
+                        rdfs:range sogo:ScalingProperty ;
+                        rdfs:comment "The property to be scaled for the target geo Feature."@en ;
+                        rdfs:label "has Scaling Property"@en .
+
+
+###  http://example.org/sogo#hasSpatialMap
+sogo:hasSpatialMap rdf:type owl:ObjectProperty ;
+                   rdfs:domain sogo:ScalingProcedure ;
+                   rdfs:comment "The spatial map used for scaling."@en ;
+                   rdfs:label "has Spatial Map"@en .
+
+
+###  http://example.org/sogo#hasTemporalExtent
+sogo:hasTemporalExtent rdf:type owl:ObjectProperty ;
+                       rdfs:domain sogo:ScalingProcedure ;
+                       rdfs:range time:Instant ,
+                                  time:Interval ,
+                                  time:Year ;
+                       rdfs:comment "The temporal extent for the scaling procedure."@en ;
+                       rdfs:label "has Temporal Extent"@en .
+
+
+###  http://example.org/sogo#requiresAuxiliaryProperty
+sogo:requiresAuxiliaryProperty rdf:type owl:ObjectProperty ;
+                               rdfs:domain sogo:ScalingMethod ;
+                               rdfs:range sogo:AuxiliaryProperty ;
+                               rdfs:label "requires auxiliary property"@en .
+
+
+###  http://example.org/sogo#sourceFeature
+sogo:sourceFeature rdf:type owl:ObjectProperty ;
+                   rdfs:domain sogo:SpatialMap ;
+                   rdfs:range geo:Feature ;
+                   rdfs:comment "The geo Feature from which the spatial mapping originates."@en ;
+                   rdfs:label "Source Feature"@en .
+
+
+###  http://example.org/sogo#targetFeature
+sogo:targetFeature rdf:type owl:ObjectProperty ;
+                   rdfs:domain sogo:SpatialMap ;
+                   rdfs:range geo:Feature ;
+                   rdfs:comment "The geo Feature to which the spatial mapping is directed."@en ;
+                   rdfs:label "Target Feature"@en .
+
+
+###  http://example.org/sogo#usesScalingMethod
+sogo:usesScalingMethod rdf:type owl:ObjectProperty ;
+                       rdfs:domain sogo:ScalingProcedure ;
+                       rdfs:range sogo:ScalingMethod ;
+                       rdfs:label "uses scaling method"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/sogo#mappingQuery
+sogo:mappingQuery rdf:type owl:DatatypeProperty ;
+                  rdfs:domain sogo:SpatialMap ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "A SPARQL query defining the correspondence between source and target geo Features."@en ;
+                  rdfs:label "Mapping Query"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/sogo#AuxiliaryProperty
+sogo:AuxiliaryProperty rdf:type owl:Class ;
+                       rdfs:subClassOf sosa:Property ;
+                       rdfs:label "Auxiliary Property"@en .
+
+
+###  http://example.org/sogo#Community
+sogo:Community rdf:type owl:Class ;
+               rdfs:subClassOf geo:Feature ;
+               rdfs:comment "A geographic community represented as a GeoSPARQL feature."@en ;
+               rdfs:label "Community"@en .
+
+
+###  http://example.org/sogo#DownscalingMethod
+sogo:DownscalingMethod rdf:type owl:Class ;
+                       rdfs:subClassOf sogo:ScalingMethod ;
+                       rdfs:label "Downscaling Method"@en .
+
+
+###  http://example.org/sogo#FineGridCell
+sogo:FineGridCell rdf:type owl:Class .
+
+
+###  http://example.org/sogo#ScalingMethod
+sogo:ScalingMethod rdf:type owl:Class ;
+                   rdfs:label "Scaling Method"@en .
+
+
+###  http://example.org/sogo#ScalingProcedure
+sogo:ScalingProcedure rdf:type owl:Class ;
+                      rdfs:subClassOf sosa:Procedure ;
+                      rdfs:label "Scaling Procedure"@en .
+
+
+###  http://example.org/sogo#ScalingProperty
+sogo:ScalingProperty rdf:type owl:Class ;
+                     rdfs:subClassOf sosa:Property ;
+                     rdfs:label "Scaling Property"@en .
+
+
+###  http://example.org/sogo#SpatialMap
+sogo:SpatialMap rdf:type owl:Class ;
+                rdfs:comment "A specification of a spatial mapping between two geo Feature entities."@en ;
+                rdfs:label "Spatial Map"@en .
+
+
+###  http://example.org/sogo#State
+sogo:State rdf:type owl:Class ;
+           rdfs:subClassOf geo:Feature ;
+           rdfs:comment "A geographic state represented as a GeoSPARQL feature."@en ;
+           rdfs:label "State"@en .
+
+
+###  http://example.org/sogo#UpscalingMethod
+sogo:UpscalingMethod rdf:type owl:Class ;
+                     rdfs:subClassOf sogo:ScalingMethod ;
+                     rdfs:label "Upscaling Method"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+geo:Feature rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Instant
+time:Instant rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Interval
+time:Interval rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Year
+time:Year rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+sosa:Procedure rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Property
+sosa:Property rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+###  http://example.org/sogo#AreaWeightedMean
+sogo:AreaWeightedMean rdf:type owl:NamedIndividual ,
+                               sogo:UpscalingMethod ;
+                      rdfs:label "Area Weighted Mean"@en .
+
+
+###  http://example.org/sogo#ArithmeticMean
+sogo:ArithmeticMean rdf:type owl:NamedIndividual ,
+                             sogo:UpscalingMethod ;
+                    rdfs:comment "Calculates the unweighted mean of fine-cell values."@en ;
+                    rdfs:label "Arithmetic Mean"@en .
+
+
+###  http://example.org/sogo#GeometricMean
+sogo:GeometricMean rdf:type owl:NamedIndividual ,
+                            sogo:UpscalingMethod ;
+                   rdfs:label "Geometric Mean"@en .
+
+
+###  http://example.org/sogo#HarmonicMean
+sogo:HarmonicMean rdf:type owl:NamedIndividual ,
+                           sogo:UpscalingMethod ;
+                  rdfs:label "Harmonic Mean"@en .
+
+
+###  http://example.org/sogo#MaximumAggregation
+sogo:MaximumAggregation rdf:type owl:NamedIndividual ,
+                                 sogo:UpscalingMethod ;
+                        rdfs:label "Maximum Aggregation"@en .
+
+
+###  http://example.org/sogo#MedianAggregation
+sogo:MedianAggregation rdf:type owl:NamedIndividual ,
+                                sogo:UpscalingMethod ;
+                       rdfs:label "Median Aggregation"@en .
+
+
+###  http://example.org/sogo#MinimumAggregation
+sogo:MinimumAggregation rdf:type owl:NamedIndividual ,
+                                 sogo:UpscalingMethod ;
+                        rdfs:label "Minimum Aggregation"@en .
+
+
+###  http://example.org/sogo#SumAggregation
+sogo:SumAggregation rdf:type owl:NamedIndividual ,
+                             sogo:UpscalingMethod .
+
+
+###  http://example.org/sogo#UniformDownscaling
+sogo:UniformDownscaling rdf:type owl:NamedIndividual ,
+                                 sogo:DownscalingMethod .
+
+
+###  http://example.org/sogo#WeightedDisaggregation
+sogo:WeightedDisaggregation rdf:type owl:NamedIndividual ,
+                                     sogo:DownscalingMethod .
+
+
+###  http://example.org/sogo#WeightedMean
+sogo:WeightedMean rdf:type owl:NamedIndividual ,
+                           sogo:UpscalingMethod ;
+                  rdfs:label "Weighted Mean"@en .
+
+

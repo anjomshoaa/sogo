@@ -1,0 +1,251 @@
+	@base <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix : <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix crisp: <http://crisp.ai.wu.ac.at/crisp/> .
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+	@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+	@prefix sf: <http://www.opengis.net/ont/sf#> .
+	@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+	@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+	@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+	@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<id/district/101> a <District>, geo:Feature; rdfs:label "Eisenstadt(Stadt)"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/102> a <District>, geo:Feature; rdfs:label "Rust(Stadt)"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/103> a <District>, geo:Feature; rdfs:label "Eisenstadt-Umgebung"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/104> a <District>, geo:Feature; rdfs:label "Güssing"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/105> a <District>, geo:Feature; rdfs:label "Jennersdorf"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/106> a <District>, geo:Feature; rdfs:label "Mattersburg"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/107> a <District>, geo:Feature; rdfs:label "Neusiedl am See"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/108> a <District>, geo:Feature; rdfs:label "Oberpullendorf"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/109> a <District>, geo:Feature; rdfs:label "Oberwart"@de ; geo:sfWithin <id/state/1> . 
+
+<id/district/201> a <District>, geo:Feature; rdfs:label "Klagenfurt Stadt"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/202> a <District>, geo:Feature; rdfs:label "Villach Stadt"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/203> a <District>, geo:Feature; rdfs:label "Hermagor"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/204> a <District>, geo:Feature; rdfs:label "Klagenfurt Land"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/205> a <District>, geo:Feature; rdfs:label "Sankt Veit an der Glan"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/206> a <District>, geo:Feature; rdfs:label "Spittal an der Drau"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/207> a <District>, geo:Feature; rdfs:label "Villach Land"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/208> a <District>, geo:Feature; rdfs:label "Völkermarkt"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/209> a <District>, geo:Feature; rdfs:label "Wolfsberg"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/210> a <District>, geo:Feature; rdfs:label "Feldkirchen"@de ; geo:sfWithin <id/state/2> . 
+
+<id/district/301> a <District>, geo:Feature; rdfs:label "Krems an der Donau(Stadt)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/302> a <District>, geo:Feature; rdfs:label "Sankt Pölten(Stadt)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/303> a <District>, geo:Feature; rdfs:label "Waidhofen an der Ybbs(Stadt)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/304> a <District>, geo:Feature; rdfs:label "Wiener Neustadt(Stadt)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/305> a <District>, geo:Feature; rdfs:label "Amstetten"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/306> a <District>, geo:Feature; rdfs:label "Baden"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/307> a <District>, geo:Feature; rdfs:label "Bruck an der Leitha"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/308> a <District>, geo:Feature; rdfs:label "Gänserndorf"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/309> a <District>, geo:Feature; rdfs:label "Gmünd"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/310> a <District>, geo:Feature; rdfs:label "Hollabrunn"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/311> a <District>, geo:Feature; rdfs:label "Horn"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/312> a <District>, geo:Feature; rdfs:label "Korneuburg"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/313> a <District>, geo:Feature; rdfs:label "Krems(Land)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/314> a <District>, geo:Feature; rdfs:label "Lilienfeld"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/315> a <District>, geo:Feature; rdfs:label "Melk"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/316> a <District>, geo:Feature; rdfs:label "Mistelbach"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/317> a <District>, geo:Feature; rdfs:label "Mödling"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/318> a <District>, geo:Feature; rdfs:label "Neunkirchen"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/319> a <District>, geo:Feature; rdfs:label "Sankt Pölten(Land)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/320> a <District>, geo:Feature; rdfs:label "Scheibbs"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/321> a <District>, geo:Feature; rdfs:label "Tulln"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/322> a <District>, geo:Feature; rdfs:label "Waidhofen an der Thaya"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/323> a <District>, geo:Feature; rdfs:label "Wiener Neustadt(Land)"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/325> a <District>, geo:Feature; rdfs:label "Zwettl"@de ; geo:sfWithin <id/state/3> . 
+
+<id/district/401> a <District>, geo:Feature; rdfs:label "Stadt Linz"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/402> a <District>, geo:Feature; rdfs:label "Stadt Steyr"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/403> a <District>, geo:Feature; rdfs:label "Stadt Wels"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/404> a <District>, geo:Feature; rdfs:label "Braunau"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/405> a <District>, geo:Feature; rdfs:label "Eferding"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/406> a <District>, geo:Feature; rdfs:label "Freistadt"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/407> a <District>, geo:Feature; rdfs:label "Gmunden"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/408> a <District>, geo:Feature; rdfs:label "Grieskirchen"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/409> a <District>, geo:Feature; rdfs:label "Kirchdorf"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/410> a <District>, geo:Feature; rdfs:label "Linz-Land"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/411> a <District>, geo:Feature; rdfs:label "Perg"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/412> a <District>, geo:Feature; rdfs:label "Ried"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/413> a <District>, geo:Feature; rdfs:label "Rohrbach"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/414> a <District>, geo:Feature; rdfs:label "Schärding"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/415> a <District>, geo:Feature; rdfs:label "Steyr-Land"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/416> a <District>, geo:Feature; rdfs:label "Urfahr-Umgebung"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/417> a <District>, geo:Feature; rdfs:label "Vöcklabruck"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/418> a <District>, geo:Feature; rdfs:label "Wels-Land"@de ; geo:sfWithin <id/state/4> . 
+
+<id/district/501> a <District>, geo:Feature; rdfs:label "Salzburg(Stadt)"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/502> a <District>, geo:Feature; rdfs:label "Hallein"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/503> a <District>, geo:Feature; rdfs:label "Salzburg-Umgebung"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/504> a <District>, geo:Feature; rdfs:label "St. Johann im Pongau"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/505> a <District>, geo:Feature; rdfs:label "Tamsweg"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/506> a <District>, geo:Feature; rdfs:label "Zell am See"@de ; geo:sfWithin <id/state/5> . 
+
+<id/district/601> a <District>, geo:Feature; rdfs:label "Graz(Stadt)"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/603> a <District>, geo:Feature; rdfs:label "Deutschlandsberg"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/606> a <District>, geo:Feature; rdfs:label "Graz-Umgebung"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/610> a <District>, geo:Feature; rdfs:label "Leibnitz"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/611> a <District>, geo:Feature; rdfs:label "Leoben"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/612> a <District>, geo:Feature; rdfs:label "Liezen"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/614> a <District>, geo:Feature; rdfs:label "Murau"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/616> a <District>, geo:Feature; rdfs:label "Voitsberg"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/617> a <District>, geo:Feature; rdfs:label "Weiz"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/620> a <District>, geo:Feature; rdfs:label "Murtal"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/621> a <District>, geo:Feature; rdfs:label "Bruck-Mürzzuschlag"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/622> a <District>, geo:Feature; rdfs:label "Hartberg-Fürstenfeld"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/623> a <District>, geo:Feature; rdfs:label "Südoststeiermark"@de ; geo:sfWithin <id/state/6> . 
+
+<id/district/701> a <District>, geo:Feature; rdfs:label "Innsbruck-Stadt"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/702> a <District>, geo:Feature; rdfs:label "Imst"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/703> a <District>, geo:Feature; rdfs:label "Innsbruck-Land"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/704> a <District>, geo:Feature; rdfs:label "Kitzbühel"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/705> a <District>, geo:Feature; rdfs:label "Kufstein"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/706> a <District>, geo:Feature; rdfs:label "Landeck"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/707> a <District>, geo:Feature; rdfs:label "Lienz"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/708> a <District>, geo:Feature; rdfs:label "Reutte"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/709> a <District>, geo:Feature; rdfs:label "Schwaz"@de ; geo:sfWithin <id/state/7> . 
+
+<id/district/801> a <District>, geo:Feature; rdfs:label "Bludenz"@de ; geo:sfWithin <id/state/8> . 
+
+<id/district/802> a <District>, geo:Feature; rdfs:label "Bregenz"@de ; geo:sfWithin <id/state/8> . 
+
+<id/district/803> a <District>, geo:Feature; rdfs:label "Dornbirn"@de ; geo:sfWithin <id/state/8> . 
+
+<id/district/804> a <District>, geo:Feature; rdfs:label "Feldkirch"@de ; geo:sfWithin <id/state/8> . 
+
+<id/district/900> a <District>, geo:Feature; rdfs:label "Wien(Stadt)"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/901> a <District>, geo:Feature; rdfs:label "Wien  1.,Innere Stadt"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/902> a <District>, geo:Feature; rdfs:label "Wien  2.,Leopoldstadt"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/903> a <District>, geo:Feature; rdfs:label "Wien  3.,Landstraße"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/904> a <District>, geo:Feature; rdfs:label "Wien  4.,Wieden"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/905> a <District>, geo:Feature; rdfs:label "Wien  5.,Margareten"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/906> a <District>, geo:Feature; rdfs:label "Wien  6.,Mariahilf"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/907> a <District>, geo:Feature; rdfs:label "Wien  7.,Neubau"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/908> a <District>, geo:Feature; rdfs:label "Wien  8.,Josefstadt"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/909> a <District>, geo:Feature; rdfs:label "Wien  9.,Alsergrund"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/910> a <District>, geo:Feature; rdfs:label "Wien 10.,Favoriten"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/911> a <District>, geo:Feature; rdfs:label "Wien 11.,Simmering"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/912> a <District>, geo:Feature; rdfs:label "Wien 12.,Meidling"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/913> a <District>, geo:Feature; rdfs:label "Wien 13.,Hietzing"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/914> a <District>, geo:Feature; rdfs:label "Wien 14.,Penzing"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/915> a <District>, geo:Feature; rdfs:label "Wien 15.,Rudolfsheim-Fünfhaus"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/916> a <District>, geo:Feature; rdfs:label "Wien 16.,Ottakring"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/917> a <District>, geo:Feature; rdfs:label "Wien 17.,Hernals"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/918> a <District>, geo:Feature; rdfs:label "Wien 18.,Währing"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/919> a <District>, geo:Feature; rdfs:label "Wien 19.,Döbling"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/920> a <District>, geo:Feature; rdfs:label "Wien 20.,Brigittenau"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/921> a <District>, geo:Feature; rdfs:label "Wien 21.,Floridsdorf"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/922> a <District>, geo:Feature; rdfs:label "Wien 22.,Donaustadt"@de ; geo:sfWithin <id/state/9> . 
+
+<id/district/923> a <District>, geo:Feature; rdfs:label "Wien 23.,Liesing"@de ; geo:sfWithin <id/state/9> . 
+

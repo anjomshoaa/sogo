@@ -1,0 +1,398 @@
+
+	@base <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix : <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix crisp: <http://crisp.ai.wu.ac.at/crisp/> .
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+	@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+	@prefix sf: <http://www.opengis.net/ont/sf#> .
+	@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+	@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+	@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+	@prefix prov: <http://www.w3.org/ns/prov#> . 
+
+
+:roadLength rdf:type ssn:Property; 
+	rdfs:domain :H3Cell; 
+	rdfs:range xsd:int ;
+	rdfs:label "roadLeangth"@en ;
+	skos:prefLabel "Total length of roads in grid cells"@en ;
+	rdfs:comment "Represents the total length, in meters, of all roads within a given cell."@en .
+
+
+<id/observation/881e064c83fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c83fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "10807"^^xsd:integer .
+
+<id/observation/881e064c87fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c87fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "37250"^^xsd:integer .
+
+<id/observation/881e064c8bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c8bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "9735"^^xsd:integer .
+
+<id/observation/881e064c91fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c91fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "12571"^^xsd:integer .
+
+<id/observation/881e064c93fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c93fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "17210"^^xsd:integer .
+
+<id/observation/881e064c95fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c95fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "9222"^^xsd:integer .
+
+<id/observation/881e064c97fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c97fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "25428"^^xsd:integer .
+
+<id/observation/881e064c99fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c99fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "9387"^^xsd:integer .
+
+<id/observation/881e064c9bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c9bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "2343"^^xsd:integer .
+
+<id/observation/881e064c9dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064c9dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "9292"^^xsd:integer .
+
+<id/observation/881e064ca3fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064ca3fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "32124"^^xsd:integer .
+
+<id/observation/881e064ca7fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064ca7fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "8093"^^xsd:integer .
+
+<id/observation/881e064cb1fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cb1fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "20970"^^xsd:integer .
+
+<id/observation/881e064cb3fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cb3fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "20950"^^xsd:integer .
+
+<id/observation/881e064cb5fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cb5fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "35844"^^xsd:integer .
+
+<id/observation/881e064cb7fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cb7fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "41285"^^xsd:integer .
+
+<id/observation/881e064cb9fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cb9fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "33422"^^xsd:integer .
+
+<id/observation/881e064cbbfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cbbfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "1526"^^xsd:integer .
+
+<id/observation/881e064cbdfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cbdfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "58503"^^xsd:integer .
+
+<id/observation/881e064cd5fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cd5fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "14191"^^xsd:integer .
+
+<id/observation/881e064cd7fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e064cd7fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "10636"^^xsd:integer .
+
+<id/observation/881e067905fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067905fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "19835"^^xsd:integer .
+
+<id/observation/881e067921fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067921fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "59418"^^xsd:integer .
+
+<id/observation/881e067923fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067923fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "34183"^^xsd:integer .
+
+<id/observation/881e067925fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067925fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "34893"^^xsd:integer .
+
+<id/observation/881e067927fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067927fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "35257"^^xsd:integer .
+
+<id/observation/881e067929fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067929fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "31534"^^xsd:integer .
+
+<id/observation/881e06792bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06792bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "31948"^^xsd:integer .
+
+<id/observation/881e06792dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06792dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "33160"^^xsd:integer .
+
+<id/observation/881e06793dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06793dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "11292"^^xsd:integer .
+
+<id/observation/881e067945fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067945fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "2693"^^xsd:integer .
+
+<id/observation/881e06794dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06794dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "5687"^^xsd:integer .
+
+<id/observation/881e067961fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067961fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "30538"^^xsd:integer .
+
+<id/observation/881e067963fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067963fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "29045"^^xsd:integer .
+
+<id/observation/881e067965fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067965fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "44918"^^xsd:integer .
+
+<id/observation/881e067967fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067967fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "22961"^^xsd:integer .
+
+<id/observation/881e067969fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067969fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "26352"^^xsd:integer .
+
+<id/observation/881e06796bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06796bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "73360"^^xsd:integer .
+
+<id/observation/881e06796dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e06796dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "38789"^^xsd:integer .
+
+<id/observation/881e067b25fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067b25fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "7132"^^xsd:integer .
+
+<id/observation/881e067b27fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e067b27fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "2028"^^xsd:integer .
+
+<id/observation/881e15b601fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b601fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "41334"^^xsd:integer .
+
+<id/observation/881e15b603fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b603fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "38113"^^xsd:integer .
+
+<id/observation/881e15b607fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b607fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "29933"^^xsd:integer .
+
+<id/observation/881e15b609fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b609fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "39849"^^xsd:integer .
+
+<id/observation/881e15b60bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b60bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "61372"^^xsd:integer .
+
+<id/observation/881e15b60dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b60dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "18769"^^xsd:integer .
+
+<id/observation/881e15b615fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b615fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "13077"^^xsd:integer .
+
+<id/observation/881e15b619fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b619fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "43533"^^xsd:integer .
+
+<id/observation/881e15b61dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b61dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "48057"^^xsd:integer .
+
+<id/observation/881e15b641fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b641fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "26455"^^xsd:integer .
+
+<id/observation/881e15b643fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b643fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "45840"^^xsd:integer .
+
+<id/observation/881e15b647fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b647fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "19776"^^xsd:integer .
+
+<id/observation/881e15b649fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b649fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "25681"^^xsd:integer .
+
+<id/observation/881e15b64bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b64bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "53704"^^xsd:integer .
+
+<id/observation/881e15b651fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b651fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "24946"^^xsd:integer .
+
+<id/observation/881e15b653fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b653fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "54306"^^xsd:integer .
+
+<id/observation/881e15b655fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b655fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "48129"^^xsd:integer .
+
+<id/observation/881e15b657fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b657fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "37451"^^xsd:integer .
+
+<id/observation/881e15b659fffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b659fffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "46033"^^xsd:integer .
+
+<id/observation/881e15b65bfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b65bfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "53866"^^xsd:integer .
+
+<id/observation/881e15b65dfffff/roads> a sosa:Observation ;  
+	sosa:resultTime "2011-01-01T00:00:00Z"^^xsd:dateTime ; 
+	sosa:hasFeatureOfInterest <id/cell/881e15b65dfffff> ; 
+	sosa:observedProperty :roadLength; 
+	sosa:hasSimpleResult "49401"^^xsd:integer .

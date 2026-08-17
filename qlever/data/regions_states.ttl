@@ -1,0 +1,35 @@
+	@base <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix : <http://crispy.ai.wu.ac.at/crisp/> .
+	@prefix crisp: <http://crisp.ai.wu.ac.at/crisp/> .
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+	@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+	@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+	@prefix sf: <http://www.opengis.net/ont/sf#> .
+	@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+	@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+	@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+	@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<id/state/1> a <State>, geo:Feature; rdfs:label "Burgenland"@de . 
+
+<id/state/3> a <State>, geo:Feature; rdfs:label "Niederösterreich"@de . 
+
+<id/state/9> a <State>, geo:Feature; rdfs:label "Wien"@de . 
+
+<id/state/2> a <State>, geo:Feature; rdfs:label "Kärnten"@de . 
+
+<id/state/6> a <State>, geo:Feature; rdfs:label "Steiermark"@de . 
+
+<id/state/4> a <State>, geo:Feature; rdfs:label "Oberösterreich"@de . 
+
+<id/state/5> a <State>, geo:Feature; rdfs:label "Salzburg"@de . 
+
+<id/state/7> a <State>, geo:Feature; rdfs:label "Tirol"@de . 
+
+<id/state/8> a <State>, geo:Feature; rdfs:label "Vorarlberg"@de . 
+
