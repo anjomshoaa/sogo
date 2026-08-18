@@ -15,21 +15,28 @@
 	@prefix ssn:  <http://www.w3.org/ns/ssn/> .
 	@prefix prov: <http://www.w3.org/ns/prov#> .
 
-<id/state/1> a <State>, geo:Feature; rdfs:label "Burgenland"@de . 
+:State a owl:Class ;
+	rdfs:subClassOf geo:Feature ;
+	rdfs:label "State"@en ;
+	rdfs:label "Land"@de ;
+	skos:prefLabel "State"@en ;
+	rdfs:comment "Represents a state region."@en .
 
-<id/state/3> a <State>, geo:Feature; rdfs:label "Niederösterreich"@de . 
+<id/state/1> a :State; rdfs:label "Burgenland"@de . 
 
-<id/state/9> a <State>, geo:Feature; rdfs:label "Wien"@de . 
+<id/state/3> a :State; rdfs:label "Niederösterreich"@de . 
 
-<id/state/2> a <State>, geo:Feature; rdfs:label "Kärnten"@de . 
+<id/state/9> a :State; rdfs:label "Wien"@de . 
 
-<id/state/6> a <State>, geo:Feature; rdfs:label "Steiermark"@de . 
+<id/state/2> a :State; rdfs:label "Kärnten"@de . 
 
-<id/state/4> a <State>, geo:Feature; rdfs:label "Oberösterreich"@de . 
+<id/state/6> a :State; rdfs:label "Steiermark"@de . 
 
-<id/state/5> a <State>, geo:Feature; rdfs:label "Salzburg"@de . 
+<id/state/4> a :State; rdfs:label "Oberösterreich"@de . 
 
-<id/state/7> a <State>, geo:Feature; rdfs:label "Tirol"@de . 
+<id/state/5> a :State; rdfs:label "Salzburg"@de . 
 
-<id/state/8> a <State>, geo:Feature; rdfs:label "Vorarlberg"@de . 
+<id/state/7> a :State; rdfs:label "Tirol"@de . 
+
+<id/state/8> a :State; rdfs:label "Vorarlberg"@de . 
 
