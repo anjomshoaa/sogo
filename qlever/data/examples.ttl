@@ -23,8 +23,12 @@ crisp:roadLength rdf:type sogo:AuxiliaryProperty .
                            sogo:targetFeature crisp:State ;
                            sogo:mappingQuery """
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX crisp: <http://crispy.ai.wu.ac.at/crisp/>
+
 SELECT * WHERE {
-	?part geo:sfWithin/geo:sfWithin {SOGO_WHOLE} .
+	<SOGO_PART> geo:sfWithin/geo:sfWithin <SOGO_WHOLE> .
+    <SOGO_WHOLE> a crisp:State .
+    <SOGO_PART> a crisp:Community .
 } """ .
 
 :H3CellCommunityMapping rdf:type owl:NamedIndividual ,
@@ -33,8 +37,12 @@ SELECT * WHERE {
                             sogo:targetFeature crisp:H3Cell ;
                             sogo:mappingQuery """
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX crisp: <http://crispy.ai.wu.ac.at/crisp/>
+
 SELECT * WHERE {
-	{SOGO_WHOLE} geo:sfContains ?part .
+	<SOGO_WHOLE> geo:sfContains <SOGO_PART> .
+    <SOGO_WHOLE> a crisp:Community .
+    <SOGO_PART> a crisp:H3Cell .
 } """ .
 
 

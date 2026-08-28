@@ -15,13 +15,15 @@ municipality (Gemeinde) --> district (Bezirk) --> state (Land)
 Example of Burgenland (id/state/1) population based on 171 community populations will be 285685 (sum aggregation). 
 
 ```turtle
-<id/observation/state/1/population> a sosa:Observation ;  
+<id/observation/bf2adddd553646fd95e74047536b5d91> a sosa:Observation ;  
 	sosa:resultTime "2011-10-31T00:00:00Z"^^xsd:dateTime ; 
-	sosa:hasFeatureOfInterest <id/state/1> ; 
-	sosa:observedProperty :population; 
+	sosa:hasFeatureOfInterest <http://crispy.ai.wu.ac.at/crisp/id/state/1> ; 
+	sosa:observedProperty <http://crispy.ai.wu.ac.at/crisp/population> ; 
 	sosa:hasSimpleResult "285685"^^xsd:integer ; 
-    sosa:usedProcedure sogo:populationUpscaling .
+	sosa:usedProcedure <http://crispy.ai.wu.ac.at/crisp/populationUpscaling> . 
 ```
+
+
 
 ## Downscaling Example 
 
@@ -39,6 +41,7 @@ Auxiliary observation:
 	sosa:hasSimpleResult "10807"^^xsd:integer .
 ```
 
+
 Property observation of community population:
 
 ```turtle
@@ -54,22 +57,22 @@ Based on these and SOGO definitions, we infer the following population for the H
 10807 / 1815437 = cell_population / 143962 ==> cell_population = 857
 
 ```turtle
-<id/observation/881e064c83fffff/population> a sosa:Observation ;  
+<id/observation/2c4c837ee0d44238bdb2443efab94eea> a sosa:Observation ;  
 	sosa:resultTime "2011-10-31T00:00:00Z"^^xsd:dateTime ; 
-	sosa:hasFeatureOfInterest <id/cell/881e064c83fffff> ; 
-	sosa:observedProperty :population; 
+	sosa:hasFeatureOfInterest <http://crispy.ai.wu.ac.at/crisp/id/cell/881e064c83fffff> ; 
+	sosa:observedProperty <http://crispy.ai.wu.ac.at/crisp/population> ; 
 	sosa:hasSimpleResult "857"^^xsd:integer ; 
-    sosa:usedProcedure sogo:populationDownscaling .
+	sosa:usedProcedure <http://crispy.ai.wu.ac.at/crisp/populationDownscaling> .
 ```
+
 
 ## Running Examples
 
 ```bash
 qlever index --overwrite-existing --parallel-parsing false
+
 qlever start
-qlever ui
 
 qlever stop 
-qlever stop ui 
 ```
-Problem in pharmacies and redcross files!
+
